@@ -57,6 +57,7 @@ const carritoRoutes = require('./routes/carritoRoutes');
 
 //Usar ese archivo de rutas - Middlewares
 
+
 app.use(webRoutes);
 app.use(usuariosRoutes);
 app.use(productoRoutes);
@@ -65,4 +66,5 @@ app.use(apiProductosRoutes);
 app.use(carritoRoutes);
 
 //Levantar nuestro servidor
-app.listen(3001,()=>console.log('Servidor corriendo en el puerto 3001'));
+const port = process.env.PORT || 3001;
+app.listen(port,()=>console.log(`Servidor corriendo en el puerto ${port}`));
