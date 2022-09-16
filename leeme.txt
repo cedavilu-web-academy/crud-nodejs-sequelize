@@ -1,0 +1,22 @@
+Soy: MSc. Angel Daniel Fuentes
+
+Recomendaciones:
+
+Para poder utilizar e implementar este pequeño proyecto debes tener en cuentga lo siguiente:
+
+1.- Descargagr
+2.- Ddescomprimir
+3.- Ingresar a la carpeta 
+4.- ejecutar comando: npm i
+5.- Activa el motor de base de datos - (Mysql)
+6.- Implementar la base datos "restaurante" - El script se encuentra en la carpeta "db"
+7.- Veifica en tu motor de base de datos (mysql) - la clave de acceso: de no ser blanco, entonces debes hacer 
+el ajuste en el archivo confg.js que esta dentro de la carpeta "database"
+8.- En la tabla usuarios para se encuentran varios usurios creados todos poseen la misma clave de ingreso: Aa123456
+El usuario adminisrador es: cedavilu@gmail.com Clave: Aa123456     - Para ser administrador el rol debe ser 9.
+9.- Para ingresar al sistema, ejecute em la consola: npm test
+10.- Finalmente en el browser - navegador, ejecute: localhost:3001
+
+Espero les resulte de utilidad.
+Todo en este Proyecto esta creado pasito a pasito. Con la intención que los alumnos puedan captar y entender los 
+diversos procesos y uso de herramientas explicadas.
