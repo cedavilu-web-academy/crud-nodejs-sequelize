@@ -63,7 +63,7 @@ module.exports = function (sequelize, dataTypes) {
             foreignKey: "userId",
           });
         
-          Item.belongsTo(models.Dish, {
+          Item.belongsTo(models.Dishes, {
             as: "dish",
             foreignKey: "productId",
           });
