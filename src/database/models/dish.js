@@ -13,14 +13,12 @@ module.exports = (sequelize, dataTypes) => {
         recommended: dataTypes.INTEGER,
         image: dataTypes.STRING
     };
-    /*let config = {
-        tableName: 'Papachos',
-        timestamps: false,
-        tableName: 'Dishes'
-    };*/
+    let config = {
+        tableName: 'dish'
+    };
         
     
-    const Dish = sequelize.define(alias, cols)
+    const Dish = sequelize.define(alias, cols,config)
     //Aquí creo mi relación entre Platos (Diskes) y Categorias (Categories)
     Dish.associate = function(models) {
         Dish.belongsTo(models.Category, {
