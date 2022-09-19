@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = 'Dishes';
+    let alias = 'Dish';
     let cols = {
         id: {
             type: dataTypes.INTEGER,
@@ -22,7 +22,7 @@ module.exports = (sequelize, dataTypes) => {
     const Dish = sequelize.define(alias, cols)
     //Aquí creo mi relación entre Platos (Diskes) y Categorias (Categories)
     Dish.associate = function(models) {
-        Dishes.belongsTo(models.Category, {
+        Dish.belongsTo(models.Category, {
                 as : 'category',
                 foreignKey: 'categoryId'
             
@@ -40,5 +40,5 @@ module.exports = (sequelize, dataTypes) => {
         });*/
 
     };
-    return Dishes
+    return Dish
 }
