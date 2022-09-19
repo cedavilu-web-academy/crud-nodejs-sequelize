@@ -19,6 +19,13 @@ module.exports = {
     "password": 'pscale_pw_qIJ8wgcQ8qN7NAAJF05lQ5pWpzG1gbi1Np6RH72Yh7y',
     "database": "restaurante",
     "host": "us-east.connect.psdb.cloud",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": 
+      {
+        "require": true,
+        "rejectUnauthorized": false 
+      }
+  },
   }
 }
